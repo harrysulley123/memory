@@ -28,6 +28,8 @@ card_obj = {
 };
 
 $(".memory_box").on("click",function(){
-  alert("You clicked on a box!");
+  var this_box_no = this.id.replace("box_","");
+  console.log(this_box_no);
+  console.log(card_obj.card_letters[this_box_no]);
 });
 </script>
